@@ -68,7 +68,17 @@ def one(input1, input2):
 	# No hints for this question
 
 def two(arg1):
-	return "null"
+	if arg1 % 15 == 0:
+		solution = 'fizzbuzz'
+	elif arg1 % 3 == 0:
+		solution = 'fizz'
+	elif arg1 % 5 == 0:
+		solution = 'buzz'
+	else:
+		solution = 'null'
+	return solution
+
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -110,7 +120,15 @@ def three(input):
 
 
 def four(input):
-    return False
+    for index in range(len(input)-1):
+		if 'c' in input:
+			c_index = input.index('c')
+			return 'ei' == input[c_index+1:c_index+3]
+		elif 'ie' in input:
+			return True
+		else 'ei' in input:
+			return False
+		
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
